@@ -1,8 +1,8 @@
 language: cpp
 
-compiler: gcc-9.3
+compiler: gcc
 
 script: 
 - cd sources/
-- g++ algStrassen.cpp -o Strass
-- g++ coloreoGrafos.cpp -o Graf
+- clang++ algStrassen.cpp -o Strass
+- clang++ coloreoGrafos.cpp -o Graf
