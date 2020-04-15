@@ -1,6 +1,6 @@
 language: cpp
 
-compiler: g++
+compiler: gcc-9.3
 
 script: 
 - cd sources/
