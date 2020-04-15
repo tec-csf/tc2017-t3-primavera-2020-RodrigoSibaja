@@ -1,0 +1,8 @@
+language: cpp
+
+compiler: gcc
+
+script: 
+- cd sources/
+- g++ algStrassen.cpp -o Strass
+- g++ coloreoGrafos.cpp -o Graf
