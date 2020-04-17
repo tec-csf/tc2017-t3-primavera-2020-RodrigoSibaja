@@ -37,20 +37,20 @@ El proyecto debe seguir la siguiente estructura de carpetas:
 ## 2. Solución
 
 El primer problema a resolver fue una implementación del algoritmo de Strassen para multiplicar dos matrices, este método permite realizar la multiplicación de matrices utilizando 7 multiplicaciones escalares, una mejora al método clásico que utiliza 8 multiplicaciones. Este algoritmo se encarga de dividir dos matrices cuadradas de orden 2 en cuatro matrices de n/2 x n/2, al dividir el problema en cuatro subproblemas a resolver similares, estamos empleando la técnica de diseño "Divide y venceras". Este método requiere del uso de más sumas que la versión clásica, pero su relevancia se debe a la reducción de una multiplicación que se refleja en el orden de complejidad del método como O(n^2.81), a comparación del método clásico cuyo orden de complejidad es O(n^3).
-Dadas dos matrices cuadradas de orden 2, A y B, tal algoritmo se basa en obtener la matriz producto C mediante las siguientes fórmulas:
+*Dadas dos matrices cuadradas de orden 2, A y B, tal algoritmo se basa en obtener la matriz producto C mediante las siguientes fórmulas:*
 
-c11 = m1 + m2 – m4 + m6
-c12 = m4 + m5
-c21 = m6 + m7
-c22 = m2 – m3 + m5 – m7
-donde los valores de m1, m2, ..., m7 vienen dados por:
-m1 = (a12 – a22)(b21 + b22)
-m2 = (a11 + a22)(b11 + b22)
-m3 = (a11 – a21)(b11 + b12)
-m4 = (a11 + a12)b22
-m5 = a11(b12 – b22)
-m6 = a22(b21 – b11)
-m7 = (a21 + a22)b11
+*c11 = m1 + m2 – m4 + m6*
+*c12 = m4 + m5*
+*c21 = m6 + m7*
+*c22 = m2 – m3 + m5 – m7*
+*donde los valores de m1, m2, ..., m7 vienen dados por:*
+*m1 = (a12 – a22)(b21 + b22)*
+*m2 = (a11 + a22)(b11 + b22)*
+*m3 = (a11 – a21)(b11 + b12)*
+*m4 = (a11 + a12)b22*
+*m5 = a11(b12 – b22)*
+*m6 = a22(b21 – b11)*
+*m7 = (a21 + a22)b11*
 
 
 El segundo problema a resolver fue la implementación de un algoritmo que coloree un grafo dado, utilizando números para representar colores, de tal manera que dos o más vertices adyacentes no tengan asignado el mismo color. El programa crea el grafo a utilizar junto con sus vertices y conexiones de aristas. El programa despues utiliza un metodo para asignar colores en el que toma un vertice y revisa el color de los vertices adyacentes, de esta forma reconoce cuales no utilizar, y le asigna el primer color disponible de la lista de colores, se avanza al siguiente vertice y se repite el proceso hasta que todos los vertices hayan sido coloreados. El orden de complejidad de este programa es de O(n^2).
@@ -80,6 +80,6 @@ Coloreo de grafos
 
 ## 3. Referencias
 
-Guerequeta, R., Vallecido, A. (1998). Técnicas de Diseño de Algoritmos. [online] Recuperado de: http://www.lcc.uma.es/~av/Libro/
-GeeksforGeeks. (2014). Graph Coloring | Set 2 (Greedy Algorithm). [online] Recuperado de: https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/
-Srikanth, K. (2020). Strassen’s Matrix Multiplication algorithm. [online] Recuperado de: https://iq.opengenus.org/strassens-matrix-multiplication-algorithm/ 
+*Guerequeta, R., Vallecido, A. (1998). Técnicas de Diseño de Algoritmos. [online] Recuperado de: http://www.lcc.uma.es/~av/Libro/*
+*GeeksforGeeks. (2014). Graph Coloring | Set 2 (Greedy Algorithm). [online] Recuperado de: https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/*
+*Srikanth, K. (2020). Strassen’s Matrix Multiplication algorithm. [online] Recuperado de: https://iq.opengenus.org/strassens-matrix-multiplication-algorithm/*
