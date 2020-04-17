@@ -40,16 +40,27 @@ El primer problema a resolver fue una implementación del algoritmo de Strassen 
 *Dadas dos matrices cuadradas de orden 2, A y B, tal algoritmo se basa en obtener la matriz producto C mediante las siguientes fórmulas:*
 
 *c11 = m1 + m2 – m4 + m6*
+
 *c12 = m4 + m5*
+
 *c21 = m6 + m7*
+
 *c22 = m2 – m3 + m5 – m7*
+
 *donde los valores de m1, m2, ..., m7 vienen dados por:*
+
 *m1 = (a12 – a22)(b21 + b22)*
+
 *m2 = (a11 + a22)(b11 + b22)*
+
 *m3 = (a11 – a21)(b11 + b12)*
+
 *m4 = (a11 + a12)b22*
+
 *m5 = a11(b12 – b22)*
+
 *m6 = a22(b21 – b11)*
+
 *m7 = (a21 + a22)b11*
 
 
@@ -81,5 +92,7 @@ Coloreo de grafos
 ## 3. Referencias
 
 *Guerequeta, R., Vallecido, A. (1998). Técnicas de Diseño de Algoritmos. [online] Recuperado de: http://www.lcc.uma.es/~av/Libro/*
+
 *GeeksforGeeks. (2014). Graph Coloring | Set 2 (Greedy Algorithm). [online] Recuperado de: https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/*
+
 *Srikanth, K. (2020). Strassen’s Matrix Multiplication algorithm. [online] Recuperado de: https://iq.opengenus.org/strassens-matrix-multiplication-algorithm/*
